@@ -65,3 +65,12 @@
 .ex-7-img:hover{
   filter: invert(.8);
 }
+/* 8° esercizio */
+.ex-8-img{
+  transition:1.5s;
+}
+
+.ex-8-img:hover{
+  border-radius: 25px;
+  filter: blur(1px) sepia(.7);
+}
