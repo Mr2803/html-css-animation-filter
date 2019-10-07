@@ -74,7 +74,6 @@
 }
 /* 9° esercizio */
 .ex-9-img {
-
   transition: transform 1.5s;
 }
 
@@ -161,6 +160,10 @@
 
 .ex-13-button:hover .ex-13-bottom-white{
   animation : line-bottom360 5s linear infinite;
+  /* animation-name:line-bottom360
+  animation delay:5s;
+  animation-timing-function:linear;
+  animation-iteration-count:infinite; */
 }
 
 
@@ -204,12 +207,12 @@
   }
 
   25%{
-    right:calc(100% - 20px);
+    right:calc(100% - 40px);
     bottom:-10px;
   }
 
   50%{
-    right:calc(100% - 20px);
+    right:calc(100% - 40px);
     bottom:100%;
   }
 
