@@ -1,3 +1,11 @@
+/* animation-name:(nome)
+animation delay:(tempo);
+animation-timing-function:linear|ease|ease-in|ease-out|ease-in-out|step-start|step-end|steps(int,start|end)|cubic-bezier(n,n,n,n)|initial|inherit;
+animation-iteration-count:number|infinite|initial|inherit; */
+
+
+
+
 /* 1° esercizio */
 .ex-1-square{
   transition: 2.5s;
@@ -131,7 +139,7 @@
   }
 
   100%{
-    left:0%;
+    left:20%;
   }
 
 }
@@ -146,7 +154,7 @@
   }
 
   100%{
-    right:0%;
+    right:20%;
   }
 
 }
@@ -160,10 +168,7 @@
 
 .ex-13-button:hover .ex-13-bottom-white{
   animation : line-bottom360 5s linear infinite;
-  /* animation-name:line-bottom360
-  animation delay:5s;
-  animation-timing-function:linear;
-  animation-iteration-count:infinite; */
+
 }
 
 
