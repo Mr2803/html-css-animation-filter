@@ -40,9 +40,9 @@
 } */
 
 /* 5° esercizio */
-.ex-5-square{
+/* .ex-5-square{
   transition:1.5s;
-}
+} */
 
 .ex-5-square:hover{
   transition:1.5s;
@@ -56,4 +56,12 @@
 /* 6° esercizio */
 .ex-6-img:hover{
   filter: grayscale(1);
+}
+
+/* 7° esercizio */
+.ex-7-img{
+  transition: 1s;
+}
+.ex-7-img:hover{
+  filter: invert(.8);
 }
