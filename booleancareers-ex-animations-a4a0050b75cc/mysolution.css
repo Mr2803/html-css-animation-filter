@@ -1,5 +1,5 @@
 .ex-1-square{
-  transition: 3s;
+  transition: 2.5s;
 }
 
 .ex-1-square:hover{
@@ -8,7 +8,7 @@
 /* /1 esercizio */
 
 .ex-2-square{
-  transition:3s;
+  transition:2.5s;
 }
 
 .ex-2-square:hover{
@@ -24,3 +24,16 @@
   border-radius: 100%;
 }
 /* /3 esercizio */
+.ex-4-square{
+  transition:2.5s;
+}
+
+.ex-4-square:hover{
+  opacity:0;
+}
+
+/* NOTE: soluzione alternativa */
+/* .ex-4-square:hover{
+  background:#F5F5F5;
+} */
+/* /4 esercizio */
