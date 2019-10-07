@@ -95,3 +95,21 @@
     transform:rotate(360deg);
   }
 }
+
+/* 11° esercizio */
+.ex-11-icon:hover{
+  animation : girella-inversa 1.5s linear;
+}
+
+@keyframes girella-inversa {
+
+  0%{
+    transform:rotate(0);
+  }
+  75%{
+    transform:rotate(270deg);
+  }
+
+}
+
+/* 12°esercizio */
