@@ -1,0 +1,53 @@
+.well{
+  position:relative;
+  min-height: 142px;
+  padding:40px;
+}
+
+.ex-10-icon{
+  position:absolute;
+  top:calc(50% - 31px);
+  left:32px;
+}
+
+
+.ex-10-icon:active{
+  animation: rotolo linear 5s;
+}
+
+@keyframes rotolo {
+  0% {
+    top:calc(50% - 31px);
+    left:32px;
+  }
+
+  25%{
+    top:calc(50% - 31px);
+    left:calc(25% - 45px);
+    transform:rotate(1turn) scale(0.75);
+  }
+
+  50%{
+    top:calc(50% - 31px);
+    left:calc(50% - 30px);
+    transform:rotate(2turn) scale(0.5);
+  }
+
+  75%{
+    top:calc(50% - 31px);
+    left:calc(75% - 15px);
+    transform:rotate(3turn) scale(0.25);
+  }
+
+  90%{
+    top:calc(50% - 31px);
+    left:100%;
+    transform:rotate(10turn) scale(0);
+  }
+
+  100%{
+    display:none;
+  }
+
+
+}

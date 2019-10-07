@@ -1,0 +1,239 @@
+/* animation-name:(nome)
+animation delay:(tempo);
+animation-timing-function:linear|ease|ease-in|ease-out|ease-in-out|step-start|step-end|steps(int,start|end)|cubic-bezier(n,n,n,n)|initial|inherit;
+animation-iteration-count:number|infinite|initial|inherit; */
+
+
+
+
+/* 1° esercizio */
+.ex-1-square{
+  transition: 2.5s;
+}
+
+.ex-1-square:hover{
+  background:red;
+}
+
+/* 2° esercizio */
+.ex-2-square{
+  transition:2.5s;
+}
+
+.ex-2-square:active{
+  width:100%;
+}
+
+/* 3° esercizio */
+.ex-3-square{
+  transition:2.5s;
+}
+
+.ex-3-square:hover{
+  border-radius: 100%;
+}
+
+/* 4° esercizio */
+.ex-4-square{
+  transition:2.5s;
+}
+
+.ex-4-square:hover{
+  opacity:0;
+}
+
+/* NOTE: soluzione alternativa */
+/* .ex-4-square:hover{
+  background:#F5F5F5;
+} */
+
+/* 5° esercizio */
+.ex-5-square{
+  transition: transform 1.5s;
+}
+
+.ex-5-square:hover{
+  transform:scale(2);
+}
+.ex-5-square:active{
+  transform:scale(.5);
+}
+
+/* 6° esercizio */
+.ex-6-img:hover{
+  filter: grayscale(1);
+}
+
+/* 7° esercizio */
+.ex-7-img{
+  transition: 1s;
+}
+.ex-7-img:hover{
+  filter: invert(.8);
+}
+/* 8° esercizio */
+.ex-8-img{
+  transition:1.5s;
+}
+
+.ex-8-img:hover{
+  border-radius: 25px;
+  filter: blur(1px) sepia(.7);
+}
+/* 9° esercizio */
+.ex-9-img {
+  transition: transform 1.5s;
+}
+
+.ex-9-img:hover{
+  transition: 1.5s;
+  border-radius: 25px;
+  filter:saturate(.6) grayscale(.3) ;
+  transform: scale(1.5)
+}
+/* 10° esercizio */
+.ex-10-icon{
+  animation: girella linear 1.5s infinite;
+}
+
+@keyframes girella {
+  0% {
+    transform:rotate(360deg);
+  }
+}
+
+/* 11° esercizio */
+.ex-11-icon:hover{
+  animation : girella-inversa 1.5s linear;
+}
+
+@keyframes girella-inversa {
+
+  0%{
+    transform:rotate(0);
+  }
+  75%{
+    transform:rotate(270deg);
+  }
+
+}
+
+/* 12°esercizio */
+.ex-12-button:hover .ex-12-top-white
+{
+  animation : line-top 2s linear;
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+  animation : line-bottom 2s linear;
+}
+
+
+@keyframes line-top {
+  0% {
+    left:20%;
+  }
+
+  50%{
+    left:calc(100% - 60px); /* NOTE: sottrai la lunghezza di line-top */
+  }
+
+  100%{
+    left:20%;
+  }
+
+}
+
+@keyframes line-bottom {
+  0% {
+    right:20%;
+  }
+
+  50%{
+    right:calc(100% - 60px); /* NOTE: sottrai la lunghezza di line-bottom */
+  }
+
+  100%{
+    right:20%;
+  }
+
+}
+
+/* 13° esercizio */
+
+.ex-13-button:hover .ex-13-top-white
+{
+  animation : line-top360 5s linear infinite;
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+  animation : line-bottom360 5s linear infinite;
+
+}
+
+
+@keyframes line-top360 {
+  0% {
+    top: -10px;
+    left: 10%;
+  }
+
+  25%{
+    left: calc(100% - 20px);
+    top:-10px;
+  }
+
+  50%{
+    left:calc(100% - 20px);
+    top:100%;
+  }
+
+  75%{
+    left:0;
+    top:100%;
+  }
+
+  90%{
+    left:-20px;
+    top:-10px;
+  }
+
+  100%{
+    left:10%;
+    top:-10px;
+  }
+
+}
+
+@keyframes line-bottom360 {
+  0% {
+    bottom: -10px;
+    right: 10%;
+  }
+
+  25%{
+    right:calc(100% - 40px);
+    bottom:-10px;
+  }
+
+  50%{
+    right:calc(100% - 40px);
+    bottom:100%;
+  }
+
+  75%{
+    right:0;
+    bottom:100%;
+  }
+
+  90%{
+    right:-20px;
+    bottom:-10px;
+  }
+
+  100%{
+    right:10%;
+    bottom:-10px;
+  }
+
+}
