@@ -154,3 +154,70 @@
 }
 
 /* 13° esercizio */
+
+.ex-13-button:hover .ex-13-top-white
+{
+  animation : line-top360 2s linear;
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+  animation : line-bottom360 2s linear;
+}
+
+
+@keyframes line-top360 {
+  0% {
+    left:10%;
+    top:-10px;
+  }
+
+  25%{
+    left:calc(100% - 30px);/* NOTE: sottrai la lunghezza di line-top360 */
+    top:-10px;
+  }
+
+  50%{
+    left:calc(100% - 60px);/* NOTE: sottrai la lunghezza di line-top360 */
+    top:100%;
+  }
+
+  75%{
+    left:0;
+    top:100%;
+  }
+
+  100%{
+    left:10%;
+    top:-10px;
+  }
+
+}
+
+@keyframes line-bottom360 {
+  0% {
+    right:10%;
+    bottom:-10px;
+  }
+
+  25%{
+    right:calc(100% - 30px);/* NOTE: sottrai la lunghezza di line-top360 */
+    bottom:-10px;
+  }
+
+  50%{
+    right:calc(100% - 30px);/* NOTE: sottrai la lunghezza di line-top360 */
+    bottom:100%;
+    width:40px;
+  }
+
+  75%{
+    right:0;
+    bottom:100%;
+  }
+
+  100%{
+    right:10%;
+    bottom:-10px;
+  }
+
+}
