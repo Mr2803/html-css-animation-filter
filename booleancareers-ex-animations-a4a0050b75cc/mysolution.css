@@ -40,16 +40,14 @@
 } */
 
 /* 5° esercizio */
-/* .ex-5-square{
-  transition:1.5s;
-} */
+.ex-5-square{
+  transition: transform 1.5s;
+}
 
 .ex-5-square:hover{
-  transition:1.5s;
   transform:scale(2);
 }
 .ex-5-square:active{
-  transition:1.5s;
   transform:scale(.5);
 }
 
@@ -75,9 +73,10 @@
   filter: blur(1px) sepia(.7);
 }
 /* 9° esercizio */
-/* .ex-9-img {
-  transition: 1.5s
-} */
+.ex-9-img {
+
+  transition: transform 1.5s;
+}
 
 .ex-9-img:hover{
   transition: 1.5s;
@@ -167,63 +166,66 @@
 
 @keyframes line-top360 {
   0% {
-    background:green;
+    top: -10px;
+    left: 10%;
   }
 
   25%{
-    left:calc(100% - 20px);
+    left: calc(100% - 20px);
     top:-10px;
-      background:green;
   }
 
   50%{
     left:calc(100% - 20px);
     top:100%;
-      background:green;
   }
 
   75%{
     left:0;
     top:100%;
-      background:green;
+  }
+
+  90%{
+    left:-20px;
+    top:-10px;
   }
 
   100%{
     left:10%;
     top:-10px;
-      background:green;
   }
 
 }
 
 @keyframes line-bottom360 {
   0% {
-    background: red;
+    bottom: -10px;
+    right: 10%;
   }
 
   25%{
     right:calc(100% - 20px);
     bottom:-10px;
-    background: red;
   }
 
   50%{
     right:calc(100% - 20px);
     bottom:100%;
-    width:30px;
-    background: red;
   }
 
   75%{
     right:0;
     bottom:100%;
-    background: red;
+  }
+
+  90%{
+    right:-20px;
+    bottom:-10px;
   }
 
   100%{
     right:10%;
     bottom:-10px;
-    background: red;
   }
 
 }
