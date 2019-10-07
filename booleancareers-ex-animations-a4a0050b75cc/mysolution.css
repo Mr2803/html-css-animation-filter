@@ -5,3 +5,13 @@
 .ex-1-square:hover{
   background:red;
 }
+/* /1 esercizio */
+
+.ex-2-square{
+  transition:3s;
+}
+
+.ex-2-square:hover{
+  width:100%;
+}
+/* /2 esercizio */
