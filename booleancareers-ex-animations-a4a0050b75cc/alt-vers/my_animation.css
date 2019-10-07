@@ -11,8 +11,8 @@
 }
 
 
-.ex-10-icon:active{
-  animation: rotolo linear 5s;
+.well.es_10:hover .ex-10-icon{
+  animation: rotolo linear 5s infinite;
 }
 
 @keyframes rotolo {
