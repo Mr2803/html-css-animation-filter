@@ -113,3 +113,44 @@
 }
 
 /* 12°esercizio */
+.ex-12-button:hover .ex-12-top-white
+{
+  animation : line-top 2s linear;
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+  animation : line-bottom 2s linear;
+}
+
+
+@keyframes line-top {
+  0% {
+    left:20%;
+  }
+
+  50%{
+    left:calc(100% - 60px); /* NOTE: sottrai la lunghezza di line-top */
+  }
+
+  100%{
+    left:0%;
+  }
+
+}
+
+@keyframes line-bottom {
+  0% {
+    right:20%;
+  }
+
+  50%{
+    right:calc(100% - 60px); /* NOTE: sottrai la lunghezza di line-bottom */
+  }
+
+  100%{
+    right:0%;
+  }
+
+}
+
+/* 13° esercizio */
