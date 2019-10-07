@@ -1,0 +1,104 @@
+body{
+  background: url(img/kamehouse.png);
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.container-fluid{
+  text-align: center;
+}
+
+
+/* bonus2 */
+.container-fluid.my_anm{
+  min-height: 500px;
+  padding:40px;
+}
+
+.container-fluid.my_anm img{
+  width:20%;
+  position:absolute;
+  top:45%;
+  left:1%;
+}
+
+#bu{
+  left: 80%;
+  top:50%;
+  width:15%;
+}
+
+.container-fluid.my_anm:hover #bu{
+  animation: bu linear 8s;
+}
+
+@keyframes bu {
+
+  0% {
+    top:50%;
+    left:80%;
+    transform: rotate(0);
+  }
+
+  25%{
+    top:50%;
+    left:80%;
+    transform: rotate(0);
+  }
+
+  50%{
+    top:50%;
+    left:80%;
+    transform: rotate(0);
+  }
+
+
+  75%{
+    transform: rotate(360deg) scale(0);
+  }
+}
+
+
+
+.container-fluid.my_anm:hover #onda{
+  animation: kamehameha linear 5s;
+}
+
+@keyframes kamehameha {
+  0% {
+    top:45%;
+    left:32px;
+  }
+
+  25%{
+    top:54%;
+    left:25%;
+    transform:scale(1.2);
+  }
+
+  50%{
+    top:67.5%;
+    left:calc(50% - 30px);
+    transform:scale(1.5);
+  }
+
+  75%{
+    top:90%;
+    left:calc(75% - 15px);
+    transform:scale(2);
+  }
+/*
+  90%{
+    top:30%;
+    left:calc(80%-110px);
+    transform: scale(3);
+
+  } */
+
+  100%{
+    top:45%;
+    left: 32px;
+  }
+
+
+}
