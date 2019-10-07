@@ -172,12 +172,12 @@
   }
 
   25%{
-    left:calc(100% - 30px);/* NOTE: sottrai la lunghezza di line-top360 */
+    left:calc(100% - 30px);
     top:-10px;
   }
 
   50%{
-    left:calc(100% - 60px);/* NOTE: sottrai la lunghezza di line-top360 */
+    left:calc(100% - 30px);
     top:100%;
   }
 
@@ -200,12 +200,12 @@
   }
 
   25%{
-    right:calc(100% - 30px);/* NOTE: sottrai la lunghezza di line-top360 */
+    right:calc(100% - 30px);
     bottom:-10px;
   }
 
   50%{
-    right:calc(100% - 30px);/* NOTE: sottrai la lunghezza di line-top360 */
+    right:calc(100% - 30px);
     bottom:100%;
     width:40px;
   }
