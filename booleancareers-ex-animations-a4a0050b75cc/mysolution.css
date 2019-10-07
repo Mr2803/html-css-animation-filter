@@ -74,3 +74,13 @@
   border-radius: 25px;
   filter: blur(1px) sepia(.7);
 }
+/* 9° esercizio */
+.ex-9-img {
+  transition: 1.5s
+}
+
+.ex-9-img:hover{
+  border-radius: 25px;
+  filter:saturate(.6) grayscale(.2) ;
+  transform: scale(1.5)
+}
