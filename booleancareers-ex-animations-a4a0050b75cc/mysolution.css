@@ -11,7 +11,7 @@
   transition:2.5s;
 }
 
-.ex-2-square:hover{
+.ex-2-square:active{
   width:100%;
 }
 /* /2 esercizio */
@@ -36,4 +36,18 @@
 /* .ex-4-square:hover{
   background:#F5F5F5;
 } */
+
 /* /4 esercizio */
+
+.ex-5-square{
+  transition:1.5s;
+}
+
+.ex-5-square:hover{
+  transform:scale(2);
+}
+.ex-5-square:active{
+  transform:scale(.5);
+}
+
+/* /5 esercizio */
