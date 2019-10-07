@@ -75,12 +75,23 @@
   filter: blur(1px) sepia(.7);
 }
 /* 9° esercizio */
-.ex-9-img {
+/* .ex-9-img {
   transition: 1.5s
-}
+} */
 
 .ex-9-img:hover{
+  transition: 1.5s;
   border-radius: 25px;
-  filter:saturate(.6) grayscale(.2) ;
+  filter:saturate(.6) grayscale(.3) ;
   transform: scale(1.5)
+}
+/* 10° esercizio */
+.ex-10-icon{
+  animation: girella linear 1.5s infinite;
+}
+
+@keyframes girella {
+  0% {
+    transform:rotate(360deg);
+  }
 }
