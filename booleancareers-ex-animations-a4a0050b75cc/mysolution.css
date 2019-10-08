@@ -179,17 +179,17 @@ animation-iteration-count:number|infinite|initial|inherit; */
   }
 
   25%{
-    left: calc(100% - 20px);
+    left: calc(100% - 40px);
     top:-10px;
   }
 
   50%{
-    left:calc(100% - 20px);
+    left:calc(100% - 40px);
     top:100%;
   }
 
   75%{
-    left:0;
+    left:calc(0% - 20px);
     top:100%;
   }
 
@@ -222,12 +222,12 @@ animation-iteration-count:number|infinite|initial|inherit; */
   }
 
   75%{
-    right:0;
+    right:calc(0% - 30px);
     bottom:100%;
   }
 
   90%{
-    right:-20px;
+    right:-30px;
     bottom:-10px;
   }
 

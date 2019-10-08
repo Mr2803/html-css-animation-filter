@@ -1,0 +1,73 @@
+body {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+  background:url(img/4fb0759a22bc072446cad37fdfbdb315.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+body:active{
+  filter: grayscale(1);
+}
+
+.rain{
+  background: url(img/rain.png);
+  height:100vh;
+  animation: rain .3s linear infinite;
+}
+
+
+.rain:before{
+  content:"";
+  height: 100%;
+  width:100%;
+  background-color: white;
+  position:absolute;
+  opacity:0;
+  animation: lightning 3s linear infinite;
+}
+
+
+
+@keyframes rain {
+
+  0%{
+    background-position: 0% 0% ;
+  }
+
+  100%{
+    background-position: 20% 100%;
+  }
+
+}
+@keyframes lightning {
+
+  0%{
+    opacity: 0;
+  }
+
+  15%{
+    opacity:0;
+  }
+
+  16%{
+    opacity:1;
+  }
+  25%{
+    opacity: 0;
+  }
+
+  26%{
+    opacity:1;
+  }
+
+  30%{
+    opacity:0;
+  }
+
+  100%{
+    opacity:0;
+  }
+
+}
